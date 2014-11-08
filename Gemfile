@@ -20,6 +20,7 @@ group :development do
     gem 'dotenv-rails'
     gem 'pry-byebug'
     gem 'pry-rails'
+    gem 'thin'
   end
 end
 
