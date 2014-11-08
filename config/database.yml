@@ -13,3 +13,6 @@ development:
 test: &test
   <<: *default
   database: pigrat_test
+
+cucumber:
+  <<: *test
