@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails'
-gem 'pg'
-gem 'sass-rails'
-gem 'uglifier'
 gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'jbuilder'
-gem 'slim-rails'
 gem 'foundation-rails'
+gem 'jbuilder'
+gem 'jquery-rails'
+gem 'pg'
+gem 'rails'
+gem 'sass-rails'
+gem 'slim-rails'
+gem 'uglifier'
 
 group :development do
   gem 'bullet'
@@ -33,8 +33,8 @@ group :test do
   group :development do
     gem 'factory_girl_rails'
     gem 'faker'
-    gem 'rspec-rails'
     gem 'rspec-power_assert'
+    gem 'rspec-rails'
   end
 end
 
