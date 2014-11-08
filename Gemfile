@@ -7,6 +7,8 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'jbuilder'
+gem 'slim-rails'
+gem 'foundation-rails'
 
 group :development do
   gem 'bullet'
