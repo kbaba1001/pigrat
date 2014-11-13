@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'coffee-rails'
+gem 'devise'
 gem 'foundation-rails'
 gem 'jbuilder'
 gem 'jquery-rails'
