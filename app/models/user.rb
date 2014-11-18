@@ -12,7 +12,8 @@ class User < ActiveRecord::Base
         user = User.create( name:     auth.extra.raw_info.name,
                             provider: auth.provider,
                             uid:      auth.uid,
-                            email:    auth.info.email,
+                            # FIXME メアドを任意項目にする
+                            email:    "hoge@example.com",
                             token:    auth.credentials.token,
                             password: Devise.friendly_token[0,20] )
       end

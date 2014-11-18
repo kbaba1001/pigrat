@@ -33,7 +33,5 @@ module Pigrat
       g.helper false
       g.test_framework false
     end
-
-    OmniAuth.config.logger = Rails.logger
   end
 end
