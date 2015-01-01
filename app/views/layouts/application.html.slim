@@ -1,13 +1,15 @@
 doctype html
-html[lang="en"]
+html lang='en'
   head
-    meta[charset="utf-8"]
-    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    title
-      = content_for?(:title) ? yield(:title) : "foundation-rails"
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "vendor/modernizr"
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+    title Pigrat
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
   body
+    - if user_signed_in?
+      = link_to 'Sing out', destroy_user_session_path, method: :delete
+    - else
+      = link_to 'Sign in with Twitter', user_omniauth_authorize_path(:twitter)
     = yield
-    = javascript_include_tag "application"

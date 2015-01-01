@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'coffee-rails'
+gem 'devise'
 gem 'foundation-rails'
 gem 'jbuilder'
 gem 'jquery-rails'
+gem 'omniauth'
+gem 'omniauth-twitter'
 gem 'pg'
 gem 'rails'
 gem 'sass-rails'
